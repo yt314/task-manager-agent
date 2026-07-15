@@ -3,20 +3,23 @@
   --text-h: #08060d;
   --bg: #fff;
   --bg-alt: #f4f3ec;
+  --page-bg: #eef0f6;
   --border: #e5e4e7;
   --accent: #aa3bff;
+  --accent-2: #7c3aed;
   --accent-text: #fff;
   --bubble-assistant-bg: #f4f3ec;
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --card-shadow: rgba(20, 10, 40, 0.16) 0 20px 50px -12px;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
 
-  font: 18px/145% var(--sans);
+  font: 16px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
-  background: var(--bg);
+  background: var(--page-bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -29,12 +32,15 @@
     --text-h: #f3f4f6;
     --bg: #16171d;
     --bg-alt: #1f2028;
+    --page-bg: #0b0c10;
     --border: #2e303a;
     --accent: #c084fc;
+    --accent-2: #a855f7;
     --accent-text: #16171d;
     --bubble-assistant-bg: #1f2028;
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+    --card-shadow: rgba(0, 0, 0, 0.5) 0 20px 50px -12px;
   }
 }
 
@@ -42,14 +48,18 @@
   box-sizing: border-box;
 }
 
+html,
 body {
+  height: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 #root {
-  min-height: 100svh;
+  height: 100svh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 h1 {
